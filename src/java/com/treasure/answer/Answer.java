@@ -30,7 +30,7 @@ public class Answer extends HttpServlet {
    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
+        try (PrintWriter out = responsemikk.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             JSONObject obj = new JSONObject(request.getParameter("d"));
             JSONObject obj2 = new JSONObject();
